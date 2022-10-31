@@ -2,7 +2,7 @@ let express = require('express');
 let app = express();
 
 
-console.console.log("Hello Word");
+console.console.log("Hello Word")
 
 
 
