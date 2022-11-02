@@ -16,6 +16,10 @@ app.route('/name')
   let {first, last} = req.query
   res.send({name: `${first} ${last}`})
 })
+.post((req, res) => {
+  let {first, last} = req.body
+  res.send({name:`${first} ${last}`})
+})
 
 
 app.get('/:word/echo', (req, res) => {
