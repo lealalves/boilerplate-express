@@ -10,6 +10,10 @@ app.use((req, res, next) => {
 })
 
 
+app.get('/:word/echo', (req, res) => {
+  res.send({echo: req.params.word})
+})
+
 app.get('/now', function(req, res, next){
   req.time = new Date().toString()
   next()
